@@ -1,0 +1,23 @@
+[project]
+name = "last-robot-standing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "stephenAmp", email = "stephen013amponsem@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "aiokafka>=0.15.0",
+    "fastapi>=0.162.2",
+    "uvicorn[standard]>=0.54.0",
+    "pydantic-settings>=2.7,<3"
+]
+
+
+[project.scripts]
+last-robot-standing = "last_robot_standing:main"
+
+
+[tool.uv]
+package = false
